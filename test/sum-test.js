@@ -10,9 +10,18 @@ describe ('Sum', function() {
       assert.isFunction(sum, 'sum is not a function');
     });
 
-    it('Should return 0 if no arguments are passed in.', function() {
+    it('Should return 0 if no arguments are passed in', function() {
       expect(sum()).to.equal(0);
-      assert.equal(sum(),0);
+      // assert.equal(sum(),0);
     });
-    
+
+    it('Should return 10', function() {
+      // expect(sum(5,5)).to.equal(10);
+      assert.equal(sum(5,5),10);
+    });
+
+    it('Arguments should be numbers', function() {
+      // expect(num1).to.be.a('number' , 'argument must be a number');
+      assert.isNumber(sum(1,1), 'is a number');
+    });
 });
