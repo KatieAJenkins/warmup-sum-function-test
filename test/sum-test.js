@@ -18,10 +18,11 @@ describe ('Sum', function() {
     it('Should return 10', function() {
       // expect(sum(5,5)).to.equal(10);
       assert.equal(sum(5,5),10);
+      assert.equal(sum(-1,2),1);
     });
 
     it('Arguments should be numbers', function() {
-      // expect(num1).to.be.a('number' , 'argument must be a number');
-      assert.isNumber(sum(1,1), 'is a number');
+      expect().to.be.a('number' , 'argument must be a number');
+      // assert.typeOf(1, 'is a number');
     });
 });
